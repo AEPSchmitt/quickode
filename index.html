@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="AEPSchmitt">
+    <meta name="description" content="Quick and simple barcode and QR code creator">
+     <meta name="keywords" content="QR Code qrcode barcode generator typer">
+    <title>quickode</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <img id="barcode" class="code">
+        <input id="barcode-text" type="text" name="barcode" placeholder="quickode" onclick="resetInput()" autofocus>
+        <div id="qrcode" class="code" onmouseenter="hideBarcode()" onmouseleave="showBarcode()"></div>
+    </div>
+
+    <script src="js/JsBarcode.code128.min.js"></script>
+    <script src="js/qrcode.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
