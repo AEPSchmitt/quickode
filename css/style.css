@@ -1,1 +1,52 @@
-
+body {
+    max-height:100vh;
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+.code {
+    opacity: 1;
+    transition: opacity .5s ease-in-out;
+    cursor:none;
+}
+.hidden {
+    opacity: 0;
+}
+#barcode:hover ~ #qrcode{
+    opacity: 0 !important;
+}
+.code:hover {
+    opacity:1;
+}
+#barcode-text {
+   font-size: 12vw;
+    width: 100%;
+    height: 40vh;
+    text-align: center;
+    border: none;
+    caret-color: transparent;
+}
+#barcode-text:focus{
+    border: none;
+    outline: none;
+}
+#qrcode {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+#qrcode img, #barcode {
+    max-width:95%;
+    transition: .4s ease-in-out;
+}
+#qrcode img:hover, #barcode:hover{
+    transform: scale(1.2);
+    cursor: none;
+}
+#qrcode.title {
+    display: none;
+}
